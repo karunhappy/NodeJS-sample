@@ -30,7 +30,7 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/projects', (req, res) => {
-    res.render('project.hbs', {
+    res.render('projects.hbs', {
         pageTitle: 'Projects Undertaken',
         bodyText: 'Projects list here'
     });
