@@ -29,6 +29,13 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('project.hbs', {
+        pageTitle: 'Projects Undertaken',
+        bodyText: 'Projects list here'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         code: 404,
